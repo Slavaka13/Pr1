@@ -4,7 +4,7 @@ fun main() {
     var result = ""
     var countChar = 1
 
-    for(i in 1 until inputVal.length)
+    for(i in 1 ..< inputVal.length)
     {
         if (inputVal[i-1] == inputVal[i]) {
             countChar++
