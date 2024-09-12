@@ -1,6 +1,6 @@
 fun main() {
     println("Введите два числа и операцию:")
-    val input = readLine()?.split(" ") ?: return
+    val input = readlnOrNull()?.split(" ") ?: return
 
     if (input.size != 3) {
         println("Неверный формат ввода")
