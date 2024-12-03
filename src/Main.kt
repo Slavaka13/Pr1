@@ -1,12 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     print("Введите строку: ")
     val inputVal = readln()
     var result = ""
     var countChar = 1
 
-    for(i in 1 until inputVal.length)
+    for(i in 1 ..< inputVal.length)
     {
         if (inputVal[i-1] == inputVal[i]) {
             countChar++

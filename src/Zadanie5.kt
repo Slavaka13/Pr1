@@ -1,11 +1,8 @@
-
 import kotlin.math.log
-
-
 
 fun main() {
     println("Введите целое число и основание степени (ЧИСЛО ОСНОВАНИЕ):")
-    val input = readLine()?.split(" ") ?: return
+    val input = readlnOrNull()?.split(" ") ?: return
 
     if (input.size != 2) {
         println("Неверный формат ввода")
